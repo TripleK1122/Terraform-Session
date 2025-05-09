@@ -31,6 +31,7 @@
 locals {
     // Naming Standard 
     name = "${var.provider_name}-${var.region}-rtype-${var.business_unit}-${var.project}-${var.tier}-${var.env}"
+ 
     // Tagging Standard
     command_tags = {
         Environment = var.env
