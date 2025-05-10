@@ -11,7 +11,7 @@ resource "aws_instance" "main" {
   }
   resource "aws_security_group" "simple_sg" {
   name        = "${var.env}- instance-sg"
-  description = "This is a security group for hw2"
+  description = "Allow SSH and HTTP"
   }
   ############# SECURITY GROUP ##################
   resource "aws_vpc_security_group_ingress_rule" "allow_tls_ipv4" {
